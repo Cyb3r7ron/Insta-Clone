@@ -16,6 +16,8 @@ class _SearchScreenState extends State<SearchScreen> {
   final TextEditingController searchController = TextEditingController();
   bool isShowUsers = false;
 
+  get StaggeredTile => null;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -89,6 +91,7 @@ class _SearchScreenState extends State<SearchScreen> {
                   );
                 }
 
+                var StaggeredGridView;
                 return StaggeredGridView.countBuilder(
                   crossAxisCount: 3,
                   itemCount: (snapshot.data! as dynamic).docs.length,
