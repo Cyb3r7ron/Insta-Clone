@@ -32,10 +32,13 @@ class _FeedScreenState extends State<FeedScreen> {
               ),
               actions: [
                 IconButton(
-                  icon: const Icon(
-                    Icons.messenger_outline,
-                    color: primaryColor,
+                  icon: Image.asset(
+                    'assets/message.png',
+                    height: 27,
+                    width: 27,
                   ),
+                  //iconSize: 8,
+                  color: primaryColor,
                   onPressed: () {},
                 ),
               ],
